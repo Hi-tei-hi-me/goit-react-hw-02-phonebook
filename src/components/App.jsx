@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
+import toast, { Toaster } from 'react-hot-toast';
 import { Box } from './Box/Box.styled';
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './Contacts/ListOfContacts';
@@ -19,7 +20,7 @@ export class App extends Component {
     const newAddedContact = { ...newContact, id: id };
     for (let contact of contacts) {
       if (newAddedContact.name.toLowerCase() === contact.name.toLowerCase()) {
-        alert(`${newAddedContact.name} is already in your contacts list`);
+        toast.error(`${newAddedContact.name} is already in your contacts list`);
         return;
       }
     }
@@ -51,6 +52,7 @@ export class App extends Component {
     const filteredList = this.getFilteredList();
     return (
       <Box>
+        <Toaster />
         <h1>Phonebook</h1>
         <ContactForm contacts={contacts} onFormSubmit={this.addContact} />
         <h2>Contacts</h2>
