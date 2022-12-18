@@ -42,6 +42,13 @@ button {
   padding: 3px 8px;
   border: 1px solid lightgray;
   border-radius: 5px;
+  background-color: lightgray;
+}
+button:hover,
+button:focus {
+  border: 1px solid transparent;
+  background-color: gray;
+  color: #fff;
 }
 
 img {
@@ -53,9 +60,11 @@ img {
 h1 {
   margin: 20px 40px;
   text-align: center;
+  color: #581919;
 }
 
 h2 {
   margin: 15px 35px;
   text-align: center;
+  color: #1a3a3a;
 }

@@ -8,6 +8,7 @@ export const FormContainer = styled(Form)`
   border: 1.5px solid gray;
   border-radius: 10px;
   padding: 15px;
+  background-color: #a77d7d;
 `;
 
 export const Label = styled.label``;
