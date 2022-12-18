@@ -28,7 +28,7 @@ export default function ContactForm({ contacts, onFormSubmit }) {
           />
         </Label>
         <Label htmlFor="number">
-          Number:
+          Phone №:
           <Input
             type="tel"
             name="number"

@@ -6,6 +6,7 @@ body {
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
@@ -29,8 +30,32 @@ ol {
   list-style: none;
 }
 
+input {
+  padding: 3px 8px;
+  margin-left: 5px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+button {
+  width: max-content;
+  padding: 3px 8px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+h1 {
+  margin: 20px 40px;
+  text-align: center;
+}
+
+h2 {
+  margin: 15px 35px;
+  text-align: center;
 }
