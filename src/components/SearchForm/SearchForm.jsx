@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import { Input, Label } from './Search.styled';
+import { SearchForm, Label, Input } from './SearchForm.styled';
 
 export default function Filter({ value, onChange }) {
   return (
-    <Label htmlFor="filter">
-      Find contact by name:
+    <SearchForm>
+      <Label htmlFor="filter">Find contact by name:</Label>
       <Input name="filter" type="text" value={value} onChange={e => onChange(e.target.value)} />
-    </Label>
+    </SearchForm>
   );
 }
 

@@ -7,7 +7,7 @@ export default function Contact({ id, name, number, handleCLick }) {
       <p>
         {name}: <span>{number}</span>
       </p>
-      <DeleteButton type="button" onClick={() => handleCLick(id)}>
+      <DeleteButton type="button" onClick={() => handleCLick(id, name)}>
         Delete contact
       </DeleteButton>
     </Item>

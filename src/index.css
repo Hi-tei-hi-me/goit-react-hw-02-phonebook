@@ -31,15 +31,15 @@ ol {
 }
 
 input {
+  box-sizing: border-box;
   padding: 3px 8px;
-  margin-left: 5px;
   border: 1px solid lightgray;
   border-radius: 5px;
 }
 
 button {
   width: max-content;
-  padding: 3px 8px;
+  padding: 5px 15px;
   border: 1px solid lightgray;
   border-radius: 5px;
   background-color: lightgray;
@@ -48,7 +48,7 @@ button:hover,
 button:focus {
   border: 1px solid transparent;
   background-color: gray;
-  color: #fff;
+  color: white;
 }
 
 img {
